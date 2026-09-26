@@ -1,0 +1,6 @@
+N = 22
+(1) slope per ROI step: mean +0.0196, dz = 1.03, t(21) = 4.81, p = 0.0001; 18/22 subjects positive
+(2) Spearman rho per subject: median +0.53, Wilcoxon p = 0.0010
+(3) anterior temporal - ventral   : diff +0.134, dz = 1.10, t(21) = 5.15, p = 0.0000
+(3) posterior temporal - ventral  : diff +0.045, dz = 0.48, t(21) = 2.24, p = 0.0362
+(3) anterior - posterior temporal : diff +0.088, dz = 0.69, t(21) = 3.26, p = 0.0038

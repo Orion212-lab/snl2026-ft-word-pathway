@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.npz
+*.fif
+*.pkl
+figures_out/
+.DS_Store
+Thumbs.db

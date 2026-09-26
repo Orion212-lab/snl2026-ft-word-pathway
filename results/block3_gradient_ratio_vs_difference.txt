@@ -1,0 +1,36 @@
+per-subject global dSPM scale (median): 03:2.47 04:2.89 05:3.34 06:3.55 07:3.07 08:3.05 12:2.79 13:1.6 14:3.34 15:3.57 16:1.72 18:2.63 19:1.78 21:2.86 22:2.18 23:2.56 25:2.93 26:1.79 27:1.79 28:1.66 29:4.01 30:2.01
+
+=== window: whole
+  RATIO log(W/NW)  [poster]          N=22  slope t(21)=+4.81 p=0.0001 (18/22 +) | ant-post t=+3.26 p=0.0038
+      dz per ROI: V1=+0.27  Post. =+0.16  FFC=+0.34  VWFA=+0.45*  Post. =+0.62*  Post. =+0.70*  Ant. S=+1.15*  Ant. M=+0.87*  TP dor=+0.79*  TP ven=+0.95*
+  DIFF raw dSPM, lp4Hz, no 06/07/21  N=19  slope t(18)=+4.47 p=0.0003 (17/19 +) | ant-post t=+3.60 p=0.0020
+      dz per ROI: V1=+0.16  Post. =-0.09  FFC=+0.22  VWFA=+0.39  Post. =+0.57*  Post. =+0.60*  Ant. S=+0.89*  Ant. M=+0.84*  TP dor=+0.74*  TP ven=+1.10*
+  DIFF global-scaled, lp4Hz          N=22  slope t(21)=+4.86 p=0.0001 (19/22 +) | ant-post t=+3.29 p=0.0035
+      dz per ROI: V1=+0.35  Post. =+0.08  FFC=+0.36  VWFA=+0.53*  Post. =+0.64*  Post. =+0.73*  Ant. S=+0.95*  Ant. M=+0.95*  TP dor=+0.84*  TP ven=+1.07*
+      shared |dSPM| per ROI (N=19): V1=3.17  Post. =2.38  FFC=2.53  VWFA=2.50  Post. =2.92  Post. =2.44  Ant. S=3.31  Ant. M=3.20  TP dor=3.25  TP ven=2.80
+
+=== window: pre
+  RATIO log(W/NW)  [poster]          N=22  slope t(21)=+3.12 p=0.0052 (14/22 +) | ant-post t=+2.34 p=0.0295
+      dz per ROI: V1=-0.06  Post. =-0.19  FFC=-0.11  VWFA=-0.03  Post. =+0.54*  Post. =+0.04  Ant. S=+0.55*  Ant. M=+0.69*  TP dor=+0.49*  TP ven=+0.68*
+  DIFF raw dSPM, lp4Hz, no 06/07/21  N=19  slope t(18)=+2.49 p=0.0225 (15/19 +) | ant-post t=+2.19 p=0.0416
+      dz per ROI: V1=-0.29  Post. =-0.37  FFC=-0.16  VWFA=-0.12  Post. =+0.40  Post. =-0.16  Ant. S=+0.40  Ant. M=+0.70*  TP dor=+0.29  TP ven=+0.66*
+  DIFF global-scaled, lp4Hz          N=22  slope t(21)=+3.01 p=0.0067 (17/22 +) | ant-post t=+2.30 p=0.0317
+      dz per ROI: V1=-0.12  Post. =-0.30  FFC=-0.16  VWFA=-0.03  Post. =+0.45*  Post. =-0.05  Ant. S=+0.47*  Ant. M=+0.73*  TP dor=+0.41  TP ven=+0.68*
+      shared |dSPM| per ROI (N=19): V1=3.09  Post. =2.36  FFC=2.43  VWFA=2.40  Post. =2.77  Post. =2.27  Ant. S=3.31  Ant. M=3.14  TP dor=3.17  TP ven=2.76
+
+=== window: post250_600
+  RATIO log(W/NW)  [poster]          N=22  slope t(21)=+2.32 p=0.0306 (18/22 +) | ant-post t=+0.31 p=0.7590
+      dz per ROI: V1=+0.30  Post. =+0.32  FFC=+0.59*  VWFA=+0.69*  Post. =+1.02*  Post. =+0.73*  Ant. S=+0.80*  Ant. M=+0.77*  TP dor=+0.59*  TP ven=+0.71*
+  DIFF raw dSPM, lp4Hz, no 06/07/21  N=19  slope t(18)=+3.03 p=0.0072 (17/19 +) | ant-post t=+0.09 p=0.9316
+      dz per ROI: V1=+0.10  Post. =+0.09  FFC=+0.39  VWFA=+0.47  Post. =+0.73*  Post. =+0.53*  Ant. S=+0.68*  Ant. M=+0.67*  TP dor=+0.53*  TP ven=+0.79*
+  DIFF global-scaled, lp4Hz          N=22  slope t(21)=+2.70 p=0.0135 (19/22 +) | ant-post t=+0.60 p=0.5522
+      dz per ROI: V1=+0.33  Post. =+0.27  FFC=+0.58*  VWFA=+0.66*  Post. =+0.91*  Post. =+0.68*  Ant. S=+0.72*  Ant. M=+0.75*  TP dor=+0.61*  TP ven=+0.76*
+      shared |dSPM| per ROI (N=19): V1=3.19  Post. =2.43  FFC=2.60  VWFA=2.62  Post. =3.19  Post. =2.60  Ant. S=3.32  Ant. M=3.30  TP dor=3.29  TP ven=2.83
+
+=== word-locked change: (W-NW)[250-600] - (W-NW)[pre]
+  DIFF raw, no 06/07/21              N=19  slope t(18)=-1.10 p=0.2861 (8/19 +) | ant-post t=-1.68 p=0.1102
+      dz per ROI: V1=+0.44  Post. =+0.42  FFC=+0.54*  VWFA=+0.49*  Post. =+0.41  Post. =+0.49*  Ant. S=+0.01  Ant. M=-0.05  TP dor=+0.14  TP ven=-0.04
+  DIFF global-scaled                 N=22  slope t(21)=-0.84 p=0.4109 (10/22 +) | ant-post t=-1.44 p=0.1649
+      dz per ROI: V1=+0.43  Post. =+0.53*  FFC=+0.75*  VWFA=+0.63*  Post. =+0.52*  Post. =+0.56*  Ant. S=+0.07  Ant. M=+0.13  TP dor=+0.21  TP ven=+0.07
+  RATIO, post - pre                  N=22  slope t(21)=-1.36 p=0.1894 (8/22 +) | ant-post t=-1.58 p=0.1295
+      dz per ROI: V1=+0.36  Post. =+0.45*  FFC=+0.73*  VWFA=+0.58*  Post. =+0.34  Post. =+0.53*  Ant. S=+0.08  Ant. M=+0.07  TP dor=+0.11  TP ven=+0.01

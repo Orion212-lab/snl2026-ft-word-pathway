@@ -1,0 +1,33 @@
+excluded sub-07: eye-tracker signal lost 96% of the time
+N = 25: 03 04 05 06 08 10 11 12 13 14 15 16 18 19 20 21 22 23 24 25 26 27 28 29 30
+words per subject: 03:120 04:120 05:120 06:120 08:120 10:60 11:444 12:165 13:60 14:53 15:120 16:120 18:120 19:120 20:120 21:120 22:120 23:120 24:120 25:120 26:120 27:120 28:120 29:120 30:120
+
+=== ocular metrics, epochs: all
+  blinks   N=25  W 0.436  NW 0.268  dz = +0.94, t = +4.72, p = 0.0001; Wilcoxon p = 0.0003; 18/25 W>NW
+  sacc     N=25  W 0.558  NW 0.439  dz = +0.53, t = +2.65, p = 0.0139; Wilcoxon p = 0.0152; 19/25 W>NW
+  gaze_sd  N=25  W 0.331  NW 0.288  dz = +0.57, t = +2.86, p = 0.0086; Wilcoxon p = 0.0042; 18/25 W>NW
+
+=== ocular metrics, epochs: kept
+  blinks   N=25  W 0.372  NW 0.204  dz = +1.06, t = +5.31, p = 0.0000; Wilcoxon p = 0.0001; 21/25 W>NW
+  sacc     N=25  W 0.534  NW 0.425  dz = +0.36, t = +1.78, p = 0.0870; Wilcoxon p = 0.0296; 19/25 W>NW
+  gaze_sd  N=25  W 0.335  NW 0.281  dz = +0.54, t = +2.71, p = 0.0123; Wilcoxon p = 0.0105; 18/25 W>NW
+
+blink probability, mean over 0-0.95 s: W 0.098, NW 0.067
+
+blink probability W - NW over time (1-D cluster test, all epochs):
+
+=== block-2 effect, all epochs: best cluster p = 0.0002, W>NW, 320-1000 ms, 78 sensors (defines the ROI below)
+  all            N = 25 (W 64 epochs/subj): cluster-ROI W - NW = +11.48 fT/cm, dz = +0.68, p = 0.00236; 25/25 positive
+  noblink        N = 24 (W 35 epochs/subj): cluster-ROI W - NW = +10.25 fT/cm, dz = +0.28, p = 0.18772; 22/24 positive
+      own cluster test: p = 0.0230, W>NW, 340-536 ms, 2 sensors
+      own cluster test: p = 0.1554, W>NW, 940-992 ms, 8 sensors
+  eyeclean       N = 24 (W 24 epochs/subj): cluster-ROI W - NW = +19.59 fT/cm, dz = +0.24, p = 0.25607; 21/24 positive
+      own cluster test: p = 0.0034, W>NW, 392-524 ms, 2 sensors
+      own cluster test: p = 0.1378, W>NW, 348-404 ms, 1 sensors
+  kept           N = 25 (W 47 epochs/subj): cluster-ROI W - NW = +4.86 fT/cm, dz = +0.72, p = 0.00145; 20/25 positive
+  kept_eyeclean  N = 21 (W 21 epochs/subj): cluster-ROI W - NW = +4.24 fT/cm, dz = +1.31, p = 0.00001; 20/21 positive
+
+across subjects, ocular W - NW difference vs sensor cluster effect (all epochs):
+  blinks   rho = +0.49, p = 0.012 (N = 25)
+  sacc     rho = -0.01, p = 0.958 (N = 25)
+  gaze_sd  rho = +0.42, p = 0.036 (N = 25)

@@ -2,7 +2,7 @@
 
 The task font is "Cousine Nerd Font Mono", bold (freqtag_spec). Cousine is metric-compatible with
 Courier New, so Courier New Bold (courbd.ttf) is used as a proxy for rendering. Per string: letters,
-ascender/descender letters, rendered ink area (pixels), horizontal extent, vertical extent.
+ascender/descender letters, letter area (lit pixels of the rendered string), horizontal extent, vertical extent.
 """
 import csv
 import sys
@@ -21,7 +21,7 @@ def props(w):
     a = np.asarray(im) > 127
     ys, xs = np.nonzero(a)
     return dict(letters=len(w), asc=sum(c in ASC for c in w), desc=sum(c in DESC for c in w),
-                ink=int(a.sum()), width=int(xs.max() - xs.min() + 1), height=int(ys.max() - ys.min() + 1))
+                letter_area_px=int(a.sum()), width=int(xs.max() - xs.min() + 1), height=int(ys.max() - ys.min() + 1))
 
 
 items = []
@@ -30,7 +30,7 @@ for lst in ("even", "odd"):
     P = {c: [props(r["w1"]) for r in rows if r["condition"] == c] for c in ("word", "non-word")}
     items += [dict(list=lst, string=r["w1"], condition=r["condition"], **props(r["w1"])) for r in rows]
     print(f"\n=== {lst} list: {len(P['word'])} words, {len(P['non-word'])} non-words")
-    for k in ("letters", "asc", "desc", "ink", "width", "height"):
+    for k in ("letters", "asc", "desc", "letter_area_px", "width", "height"):
         w = np.array([p[k] for p in P["word"]]); n = np.array([p[k] for p in P["non-word"]])
         u = stats.mannwhitneyu(w, n)
         d = (n.mean() - w.mean()) / np.sqrt((w.var(ddof=1) + n.var(ddof=1)) / 2)

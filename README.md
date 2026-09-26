@@ -13,7 +13,7 @@ A 6–7 Hz flicker tag tracks the **visual input**, not wordness. The **word-loc
 | | Tag (frequency tagging) | Word-locked (evoked) response |
 |---|---|---|
 | Left-temporal sensors (N = 20) | Words ≈ consonant strings (harmonics 1–4: \|dz\| < .5, TOST p = .03, BF01 = 4.2) | Word > Non-word, 250–600 ms (dz = 1.04, p < .001) |
-| Occipital sensors (N = 20) | Consonant strings > words (dz = −.88, p < .001), matching their ~10 % more ink and 20 % greater height | n.s. (dz = .32) |
+| Occipital sensors (N = 20) | Consonant strings > words (dz = −.88, p < .001), matching their ~10 % larger letter area on screen (lit pixels) and 20 % greater height | n.s. (dz = .32) |
 | Direct test (same epochs, source cohort N = 17) | — | Evoked − tag Δdz = 1.02 [.29, 1.92], p = .01 |
 | Source (dSPM, N = 22) | tag at zero along the pathway | Word > Non-word in all 6 temporal ROIs (p_FDR < .05), maximal anteriorly (slope t(21) = 4.81) |
 
@@ -57,7 +57,7 @@ Each script's docstring lists its inputs. Paths are passed as arguments or envir
 - **S1 · Leakage.** ROI-to-ROI leakage of the dSPM pipeline (unit dipoles, median of 19 subjects).
   - The four anterior temporal ROIs are not separable (cross-talk ≈ .7), and neither are FFC and VWFA.
   - One anterior temporal source reproduces most of the block-2 (sources) profile.
-- **S2 · Stimuli.** Low-level properties of the stimuli. Consonant strings are always 4 letters, have more ink and are taller, with 3–4× more descender letters.
+- **S2 · Stimuli.** Low-level properties of the stimuli. Consonant strings are always 4 letters, cover a larger letter area on screen and are taller, with 3–4× more descender letters.
 - **S3 · Cascade windows.** Tag vs evoked Word > Non-word in the a-priori cascade windows (80–130, 150–225, 250–600 ms).
 - **S4 · Block-2 (sources) gradient.**
   - It is not a ratio artifact: it is the same on raw dSPM differences.
@@ -69,10 +69,10 @@ Each script's docstring lists its inputs. Paths are passed as arguments or envir
 2. **Unequal trial counts faked an effect.** Counts are now equalized within subject.
 3. **No gap between words.** The pre-stimulus window holds the previous word, so the fixation baseline is used instead.
 4. **Noise-covariance rank.** After SSS, 3 subjects kept a ~1e-38 eigenvalue: the dSPM gain was ×10⁶ and the maps were distorted. The fix is `mne.compute_rank(cov, tol='auto')` (`pipeline/rebuild_inverse_rankfix.py`).
-5. **Match the ink.** The occipital tag followed the low-level differences between stimuli.
+5. **Match low-level visual properties.** The occipital tag followed the letter-area and height differences between stimuli.
 
 ## Limitations
-- **Stimulus contrast.** Words vs consonant strings confounds lexicality with orthographic legality, pronounceability and ink; there are no pseudowords.
+- **Stimulus contrast.** Words vs consonant strings confounds lexicality with orthographic legality, pronounceability and low-level visual properties (letter area, height); there are no pseudowords.
 - **Eye movements.** Words drew more blinks (dz = .94) and saccades. The sensor effect holds in PTP-clean, blink- and saccade-free epochs (dz = 1.31, 20/21 subjects; `results/eye_control_group.txt`).
 - **Sustained anterior temporal effect.** It is present before word onset, so it may reflect a block-level state (mini-blocks are condition-pure) rather than word-locked processing.
 - **Ventral stream.** No whole-epoch difference in FFC/VWFA. A word-locked rise at 250–600 ms is not robust to excluding subjects with trigger anomalies.

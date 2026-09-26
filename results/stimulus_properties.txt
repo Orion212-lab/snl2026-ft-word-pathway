@@ -3,7 +3,7 @@
   letters  word      3.8  non-word      4.0  NW/W 1.05  d(NW-W) = +0.70  Mann-Whitney p = 0.011
   asc      word      1.1  non-word      1.4  NW/W 1.31  d(NW-W) = +0.47  Mann-Whitney p = 0.048
   desc     word      0.4  non-word      1.2  NW/W 3.18  d(NW-W) = +1.57  Mann-Whitney p = 1.4e-06
-  ink      word  21448.0  non-word  23217.4  NW/W 1.08  d(NW-W) = +0.82  Mann-Whitney p = 0.0033
+  letter_area_px word  21448.0  non-word  23217.4  NW/W 1.08  d(NW-W) = +0.82  Mann-Whitney p = 0.0033
   width    word    444.5  non-word    461.7  NW/W 1.04  d(NW-W) = +0.49  Mann-Whitney p = 0.77
   height   word    137.4  non-word    165.0  NW/W 1.20  d(NW-W) = +1.50  Mann-Whitney p = 2.3e-06
   3-letter words: 6 / 30
@@ -12,7 +12,7 @@
   letters  word      3.7  non-word      4.0  NW/W 1.08  d(NW-W) = +0.91  Mann-Whitney p = 0.0013
   asc      word      1.3  non-word      1.4  NW/W 1.13  d(NW-W) = +0.20  Mann-Whitney p = 0.31
   desc     word      0.3  non-word      1.0  NW/W 3.88  d(NW-W) = +1.42  Mann-Whitney p = 2.3e-06
-  ink      word  20491.1  non-word  23011.8  NW/W 1.12  d(NW-W) = +1.17  Mann-Whitney p = 1.5e-05
+  letter_area_px word  20491.1  non-word  23011.8  NW/W 1.12  d(NW-W) = +1.17  Mann-Whitney p = 1.5e-05
   width    word    430.0  non-word    456.6  NW/W 1.06  d(NW-W) = +0.65  Mann-Whitney p = 0.9
   height   word    132.3  non-word    162.2  NW/W 1.23  d(NW-W) = +1.56  Mann-Whitney p = 4.4e-06
   3-letter words: 9 / 30

@@ -1,4 +1,4 @@
-list,string,condition,letters,asc,desc,ink,width,height
+list,string,condition,letters,asc,desc,letter_area_px,width,height
 even,wet,word,3,1,0,17187,358,123
 even,wary,word,4,0,1,23028,476,133
 even,slow,word,4,1,0,21085,465,130

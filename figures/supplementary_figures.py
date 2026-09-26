@@ -53,7 +53,7 @@ save(fig, "S1_leakage_matrix")
 
 # S2 stimulus properties
 rows = list(csv.DictReader(open(STIM)))
-props = [("letters", "letters"), ("ink", "ink area (px)"), ("height", "vertical extent (px)"), ("desc", "descender letters")]
+props = [("letters", "letters"), ("letter_area_px", "letter area (lit px)"), ("height", "vertical extent (px)"), ("desc", "descender letters")]
 fig, axes = plt.subplots(1, 4, figsize=(11, 3))
 for ax, (k, lab) in zip(axes, props):
     for x, cond, col in ((0, "word", "#2a78d6"), (1, "non-word", "#eb6834")):

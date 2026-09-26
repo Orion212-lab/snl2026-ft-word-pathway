@@ -12,8 +12,8 @@ A 6–7 Hz flicker tag tracks the **visual input**, not wordness. The **word-loc
 
 | | Tag (frequency tagging) | Word-locked (evoked) response |
 |---|---|---|
-| Left-temporal sensors | Words ≈ consonant strings (harmonics 1–4: equivalence \|dz\| < .5, TOST p = .03, BF01 = 4.2) | Word > Non-word, 250–600 ms (dz = 1.04) |
-| Occipital sensors | Consonant strings > words (dz = −.88, p = .001), matching their ~10 % more ink and 20 % greater height | n.s. |
+| Left-temporal sensors | Words ≈ consonant strings (harmonics 1–4: dz = −.14, BF01 = 3.5) | Word > Non-word, 250–600 ms (dz = .93, p = .002) |
+| Occipital sensors | Consonant strings > words (dz = −.78, p = .006), matching their ~10 % more ink and 20 % greater height | n.s. (dz = .30) |
 | Direct test (same epochs) | — | Evoked − tag Δdz = 1.02 [.29, 1.92], p = .01 |
 | Source (dSPM, N = 22) | tag at zero along the pathway | Word > Non-word in all 6 temporal ROIs (p_FDR < .05), maximal anteriorly (slope t(21) = 4.81) |
 

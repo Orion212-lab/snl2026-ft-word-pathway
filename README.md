@@ -12,9 +12,9 @@ A 6–7 Hz flicker tag tracks the **visual input**, not wordness. The **word-loc
 
 | | Tag (frequency tagging) | Word-locked (evoked) response |
 |---|---|---|
-| Left-temporal sensors | Words ≈ consonant strings (harmonics 1–4: dz = −.14, BF01 = 3.5) | Word > Non-word, 250–600 ms (dz = .93, p = .002) |
-| Occipital sensors | Consonant strings > words (dz = −.78, p = .006), matching their ~10 % more ink and 20 % greater height | n.s. (dz = .30) |
-| Direct test (same epochs) | — | Evoked − tag Δdz = 1.02 [.29, 1.92], p = .01 |
+| Left-temporal sensors (N = 20) | Words ≈ consonant strings (harmonics 1–4: \|dz\| < .5, TOST p = .03, BF01 = 4.2) | Word > Non-word, 250–600 ms (dz = 1.04, p < .001) |
+| Occipital sensors (N = 20) | Consonant strings > words (dz = −.88, p < .001), matching their ~10 % more ink and 20 % greater height | n.s. (dz = .32) |
+| Direct test (same epochs, source cohort N = 17) | — | Evoked − tag Δdz = 1.02 [.29, 1.92], p = .01 |
 | Source (dSPM, N = 22) | tag at zero along the pathway | Word > Non-word in all 6 temporal ROIs (p_FDR < .05), maximal anteriorly (slope t(21) = 4.81) |
 
 **Update relative to the submitted abstract.** Two changes reversed its conclusions: a fixation baseline (instead of the previous word's tail) and equal trial counts per condition.
@@ -44,7 +44,7 @@ The same recordings give two measures:
 | Folder | Content |
 |---|---|
 | `analyses/` | Group-level statistics run on derived per-subject files (spectra, ROI time courses, sensor field strength) |
-| `pipeline/` | Scripts that need the MEG derivatives: inverse-operator rank fix, eye-tracker control |
+| `pipeline/` | Scripts that need the MEG derivatives: inverse-operator rank fix, eye-tracker control, block-3 sensor tag vs evoked |
 | `figures/` | Scripts for the poster panels and the supplementary figures |
 | `results/` | Text / JSON outputs of the analyses (group level) |
 | `supplementary/` | Figures S1–S4 |

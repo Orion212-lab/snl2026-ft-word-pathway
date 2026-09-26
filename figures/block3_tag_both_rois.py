@@ -6,7 +6,7 @@ Right (1 x 4): the 4 conditions (Word/Non-word x F1/F2), one dot per subject:
       tag = sum of (SNR - 1) over harmonics 1-4 at the condition's own tag (spectra above);
       evoked = mean gradiometer field strength 250-600 ms after word onset.
       Paired Word vs Non-word per tag: dz and p above each pair.
-Same 17 subjects throughout (the per-word evoked cohort).
+Same subjects throughout (N = 20, sensor cohort; spectra and evoked from the same epochs).
 
 Usage: python block3_tag_both_rois.py <spectra.npz (per-word SNR)> <perword.npz (evoked)> <out_dir>
 """

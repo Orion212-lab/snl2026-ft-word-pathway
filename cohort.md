@@ -14,13 +14,12 @@
 
 | Panel | N | Subjects | Notes |
 |---|---|---|---|
-| Block 3 · tag spectra, violins | 17 | 04 06 07 08 12 13 14 18 19 21 22 23 25 26 28 29 30 | Same per-word epochs for both dependent variables; whole-word PTP rejection removed 02, 03, 05, 15, 16, 27 |
-| Block 3 · harmonic sums (left-temporal and occipital) | 17 | same as Block 3 spectra | Per-word phase-locked spectra |
+| Block 3 · tag spectra, harmonic sums, evoked violins (sensors) | 20 | 04 06 07 08 11 12 13 14 16 18 19 21 22 23 25 26 27 28 29 30 | Same per-word epochs for both measures (PTP rejection over the whole word, −0.2–2.83 s, ≥ 8 equalized epochs/condition). Not retained from the 27-subject sensor roster: 02, 03, 05, 10, 15, 20, 24 |
 | Block 1 · sensor cluster test, panels a–b | 26 | 03 04 05 06 07 08 10 11 12 13 14 15 16 18 19 20 21 22 23 24 25 26 27 28 29 30 | sub-02: every per-word epoch PTP-rejected |
 | Block 1 · topomaps (grand averages) | 25 | as above, without 10 | |
 | Block 1 · eye-tracker control | 25 | as above, without 07 | sub-07: eye-tracker signal lost 96 % of the time |
 | Block 2 · source ROIs | 22 | 03 04 05 06 07 08 12 13 14 15 16 18 19 21 22 23 25 26 27 28 29 30 | No MRI: 10, 11. Source artifact: 20, 24. Inverse rank corrected for 06, 07, 21 |
-| Block 4 · tag vs evoked | 17 | same as Block 3 spectra | |
+| Block 4 · tag vs evoked (sources + sensors) | 17 | 04 06 07 08 12 13 14 18 19 21 22 23 25 26 28 29 30 | Source run of the same pipeline; 11 has no MRI; 16 and 27 were not retained by the source run |
 
 ## Trigger anomalies
 

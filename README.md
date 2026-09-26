@@ -21,6 +21,19 @@ A 6–7 Hz flicker tag tracks the **visual input**, not wordness. The **word-loc
 - The tag effect is now null.
 - The source effect is now Word > Non-word.
 
+## Aims and the two readouts
+
+- **Aim 1** — does MEG (sensors, then sources) recover the V1 → vOT → temporal sequence? Poster blocks 1–2.
+- **Aim 2** — does the frequency-tagged response differ between words and consonant strings? Poster blocks 3–4.
+
+The same recordings give two measures:
+
+| | Tag response (FT) | Word-locked response (evoked) |
+|---|---|---|
+| What | Power at the flicker rate (6 or 7.06 Hz, plus harmonics) relative to neighbouring frequencies (SNR) | MEG field averaged across words, time-locked to each word onset |
+| Follows | the flicker, cycle after cycle | the one-off response to each new word (every 2.83 s) |
+| Word vs Non-word | SNR difference | amplitude difference, 250–600 ms |
+
 ## Design (one-word task)
 - **Stimuli:** 60 words (e.g. *wary*) and 60 consonant strings (e.g. *hkwj*). Each string is shown for 2.83 s and flickers at 6.00 or 7.06 Hz on a 240 Hz projector. The photodiode measured 5.965 and 7.024 Hz.
 - **Blocks:** mini-blocks of 10 strings from the same condition (28.33 s), each preceded by a 2 s fixation, with a catch query after each block.
@@ -43,10 +56,10 @@ Each script's docstring lists its inputs. Paths are passed as arguments or envir
 
 - **S1 · Leakage.** ROI-to-ROI leakage of the dSPM pipeline (unit dipoles, median of 19 subjects).
   - The four anterior temporal ROIs are not separable (cross-talk ≈ .7), and neither are FFC and VWFA.
-  - One anterior temporal source reproduces most of the block-3 profile.
+  - One anterior temporal source reproduces most of the block-2 (sources) profile.
 - **S2 · Stimuli.** Low-level properties of the stimuli. Consonant strings are always 4 letters, have more ink and are taller, with 3–4× more descender letters.
 - **S3 · Cascade windows.** Tag vs evoked Word > Non-word in the a-priori cascade windows (80–130, 150–225, 250–600 ms).
-- **S4 · Block-3 gradient.**
+- **S4 · Block-2 (sources) gradient.**
   - It is not a ratio artifact: it is the same on raw dSPM differences.
   - Its anterior part is already present before word onset.
   - At 250–600 ms the effect is broad.

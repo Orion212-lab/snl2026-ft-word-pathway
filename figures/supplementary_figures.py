@@ -7,7 +7,7 @@ S2  Low-level visual properties of the one-word stimuli, Word vs Non-word -- inp
 S3  Word > Non-word effect (dz) of the tag (FT envelope) and of the evoked response in the three a-priori
     cascade windows (80-130, 150-225, 250-600 ms) -- input: results/block4_cascade_windows.json
 S4  Block-3 gradient: log ratio vs raw difference, and whole epoch vs pre-stimulus vs 250-600 ms --
-    input: results/block3_gradient_ratio_vs_difference.json
+    input: results/block2_sources_gradient_ratio_vs_difference.json
 
 Usage: python supplementary_figures.py <leakage.npz> <stimuli.csv> <cascade.json> <gradient.json> <out_dir>
 """
@@ -47,7 +47,7 @@ ax.set_xticks(range(10), ROIS, rotation=45, ha="right")
 ax.set_yticks(range(10), ROIS)
 ax.set_xlabel("true source ROI (unit dipoles)")
 ax.set_ylabel("ROI where the dSPM estimate appears")
-ax.set_title(f"S1 · ROI leakage of the block-3 dSPM pipeline (median, N = {z['leak'].shape[0]})", fontsize=11)
+ax.set_title(f"S1 · ROI leakage of the block-2 (source) dSPM pipeline (median, N = {z['leak'].shape[0]})", fontsize=11)
 fig.colorbar(im, ax=ax, shrink=0.8, label="estimate / estimate in the source ROI")
 save(fig, "S1_leakage_matrix")
 
@@ -105,7 +105,7 @@ for ax, w, title in zip(axes, ("whole", "pre", "post250_600"), ("whole epoch", "
     ax.legend(frameon=False, fontsize=7.5, loc="upper left")
     ax.spines[["top", "right"]].set_visible(False)
 axes[0].set_ylabel("Word > Non-word (dz)")
-fig.suptitle("S4 · Block-3 gradient is not a ratio artifact; its anterior part is present before word onset",
+fig.suptitle("S4 · Block-2 (sources) gradient is not a ratio artifact; its anterior part is present before word onset",
              fontsize=11)
 fig.tight_layout()
 save(fig, "S4_gradient_decomposition")

@@ -77,7 +77,7 @@ Each script's docstring lists its inputs. Paths are passed as arguments or envir
 - **Sustained anterior temporal effect.** It is present before word onset, so it may reflect a block-level state (mini-blocks are condition-pure) rather than word-locked processing.
 - **Ventral stream.** No whole-epoch difference in FFC/VWFA. A word-locked rise at 250–600 ms is not robust to excluding subjects with trigger anomalies.
 - **Latency.** The latency ordering of the cascade is not significant.
-- **Not yet analysed.** Catch-query accuracy per condition has not been scored, and the language localizer was not used for these ROIs.
+- **Not yet analysed.** Catch-query accuracy per condition has not been scored, and the language localizer (promised in the abstract) was not used: ROIs are atlas-based (HCP-MMP1).
 
 ## Software
 MNE-Python 1.10.2, MNE-BIDS-Pipeline 1.10.1, FreeSurfer 7.1.2; see `requirements.txt` for the analysis scripts.
